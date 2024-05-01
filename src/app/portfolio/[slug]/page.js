@@ -26,8 +26,6 @@ export default function PortfolioSingle({ params }) {
   if (!portfolioItem) {
     return null;
   }
-
-  const author = portfolioItem.Author.Name;
   return (
     <>
       <head>
