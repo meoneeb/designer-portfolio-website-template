@@ -1,0 +1,30 @@
+{
+  "name": "meoneeb-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.1.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0",
+    "html-react-parser": "^5.1.9",
+    "mongodb": "^6.5.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-bootstrap": "^2.10.2",
+    "react-calendly": "^4.3.0",
+    "react-dom": "^18",
+    "react-responsive-carousel": "^3.2.23",
+    "react-share": "^5.1.0",
+    "react-slick": "^0.30.2",
+    "sass": "^1.71.1",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1"
+  }
+}

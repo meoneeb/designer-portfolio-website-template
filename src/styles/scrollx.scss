@@ -1,0 +1,28 @@
+/* styles/Home.module.css */
+.container {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide vertical scrollbar */
+  }
+  
+  .horizontalContainer {
+    display: flex;
+    width: 300vw; /* 3 times viewport width for horizontal scrolling */
+    height: 100vh;
+  }
+  
+  .horizontalItem {
+    flex: 0 0 100vw; /* Each item occupies the full viewport width */
+    height: 100%;
+    padding: 20px;
+    // border: 1px solid #ccc;
+  }
+  
+  .horizontalItem h2 {
+    margin-top: 0;
+  }
+  
+  .horizontalItem p {
+    margin-bottom: 0;
+  }
+  

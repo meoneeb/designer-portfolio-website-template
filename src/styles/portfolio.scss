@@ -1,0 +1,117 @@
+.portfolioCard {
+  overflow: hidden;
+  height: fit-content;
+  padding: 20px;
+  .portfolioImgContain {
+    height: 100%;
+    width: 400px;
+  }
+  &:hover {
+    background-color: var(--dark);
+  }
+}
+
+.portfolioImg {
+  height: 100%;
+  min-height: 225px;
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+div.blogContent > p,
+table,
+tr,
+td {
+  font-size: large;
+  color: var(--dark);
+}
+div.blogContent > h3,
+h5 {
+  color: var(--dark);
+}
+div.blogContent > img {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.descThumb {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  /* Adjust the line height and max height as needed */
+  max-height: 4.5em; /* Number of lines * line height */
+}
+
+.custom-arrow {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--light);
+  border-radius: 100px;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+  margin: auto;
+}
+
+.custom-arrow.prev {
+  left: 10px;
+}
+
+.custom-arrow.next {
+  right: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumbnails img {
+  width: 100px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.thumbnails img.active {
+  border: 2px solid var(--dark);
+}
+
+.portfolioSlideImage {
+  &:hover {
+    .custom-arrow {
+      display: flex;
+    }
+  }
+}
+
+.modalSize {
+  height: 90vh;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContent {
+  background-color: transparent;
+  border-radius: 0;
+}
+.modalPrototype {
+  height: 90vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

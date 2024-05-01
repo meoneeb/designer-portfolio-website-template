@@ -1,0 +1,59 @@
+.ItemExp {
+  padding: 20px;
+  width: 100%;
+  gap: -10px;
+  .toggleIcon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  &:hover {
+    background-color: var(--bg-main);
+    .toggleIcon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+      background-color: var(--primary10);
+      border-radius: 100px;
+      color: var(--primary);
+    }
+  }
+}
+.ItemExpActive {
+  padding: 20px;
+  width: 100%;
+  gap: -10px;
+  background-color: var(--bg-main);
+  .toggleIcon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: var(--primary10);
+    border-radius: 100px;
+    color: var(--primary);
+  }
+}
+.expContent {
+  li {
+    color: var(--grey);
+    font-size: medium;
+  }
+  .desc {
+    font-size: medium;
+    color: var(--grey);
+  }
+}
+
+.ItemPFS {
+  width: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,156 @@
+@mixin btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 2px;
+}
+
+@mixin btn-hover-shadow {
+  box-shadow: 0px 8px 20px -8px var(--primary);
+}
+@mixin btn-hover-up {
+  transform: translateY(-4px);
+}
+
+.btn-primary {
+  color: #1e1e1e;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary);
+  height: 40px;
+  padding: 0px 16px;
+  @include btn;
+  &:hover {
+    @include btn-hover-shadow;
+    @include btn-hover-up;
+  }
+}
+
+.btn-text {
+  color: var(--light);
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--dark);
+  color: var(--white);
+  height: 40px;
+  padding: 0px 16px;
+  @include btn;
+  &:hover {
+    // @include btn-hover-shadow;
+    @include btn-hover-up;
+    background-color: #ffffff10;
+    .btn-icon-right {
+      transform: translate3d(4px, -4px, 8px) rotate(8deg);
+      fill: var(--primary);
+    }
+  }
+}
+.text-btn-sml {
+  font-weight: 400;
+  border: none;
+  height: 26;
+  font-size: small;
+  &:hover {
+    span,
+    i {
+      color: var(--primary) !important;
+      text-decoration: underline;
+    }
+  }
+}
+// SIDE NAVBAR
+.iconMenuContainer {
+  width: 48px;
+  height: 48px;
+  &:hover {
+    background-color: var(--primary10);
+    border-radius: 100px;
+    .iconMenu {
+      color: var(--primary);
+    }
+  }
+}
+.iconMenuActive {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary10);
+  border-radius: 100px;
+  .iconMenu {
+    color: var(--primary);
+  }
+}
+.iconMenu {
+  color: var(--white);
+}
+.brandsIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon {
+    color: var(--outline);
+    margin: auto;
+    display: block;
+  }
+  &:hover {
+    background-color: var(--primary10);
+    border-radius: 100px;
+    .icon {
+      color: var(--primary);
+    }
+  }
+}
+
+.footerLink {
+  color: var(--white);
+  text-decoration: none;
+  font-size: medium;
+  width: fit-content;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  &:hover {
+    color: var(--white);
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+  }
+}
+.footerLinkBtn {
+  color: var(--white);
+  text-decoration: none;
+  font-size: medium;
+  width: fit-content;
+  padding: 0px 10px;
+  &:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+}
+
+.btn-text2 {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  font-size: large;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-underline-offset: 5px;
+  .hover {
+    display: none;
+  }
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+    text-underline-offset: 5px;
+    .hover {
+      display: block;
+    }
+  }
+}
