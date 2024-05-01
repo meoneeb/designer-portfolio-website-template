@@ -2,6 +2,7 @@
 import { Inter, Syne } from "next/font/google";
 import SideNavBar from "@/commonComponents/SideNavBar";
 import "./globals.scss";
+import Attribution from "@/commonComponents/Attribution";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 // import { useEffect } from "react";
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={syne.className}>
         <SideNavBar />
+        <Attribution />
         {children}
       </body>
     </html>
