@@ -1,6 +1,4 @@
-import Attribution from "@/components/portfolio/Featured/Attribution";
 import FeaturedPortfolio from "@/components/portfolio/Featured/FeaturedPortfolio";
-// import PortfolioFullScreen from "@/components/portfolio/PortfolioFullScreen";
 
 export default function featured() {
   const metadata = {
