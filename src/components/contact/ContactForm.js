@@ -157,7 +157,7 @@ export default function ContactForm() {
                 </option>
                 {options.map((option, index) => (
                   <option
-                    style={{ color: "var(--bg-main)", padding: 20 }}
+                    style={{ color: "var(--text)", padding: 20 }}
                     key={index}
                     value={option}
                   >
@@ -175,12 +175,12 @@ export default function ContactForm() {
                   onChange={(e) => setProjectType(e.target.value)}
                   required
                 >
-                  <option style={{ color: "var(--bg-main)" }} value="">
+                  <option style={{ color: "var(--text)" }} value="">
                     Select project type
                   </option>
                   {projectOptions.map((option, index) => (
                     <option
-                      style={{ color: "var(--bg-main)" }}
+                      style={{ color: "var(--text)" }}
                       key={index}
                       value={option}
                     >

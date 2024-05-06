@@ -20,16 +20,13 @@
   border-radius: 20px;
 }
 
-div.blogContent > p,
-table,
-tr,
-td {
+div.blogContent > p {
   font-size: large;
-  color: var(--dark);
+  color: var(--text);
 }
 div.blogContent > h3,
 h5 {
-  color: var(--dark);
+  color: var(--text);
 }
 div.blogContent > img {
   max-width: 800px;
@@ -54,7 +51,7 @@ div.blogContent > img {
   height: 48px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--light);
+  background-color: var(--text);
   border-radius: 100px;
   border: none;
   font-size: 24px;

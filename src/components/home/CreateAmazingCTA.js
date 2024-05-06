@@ -19,7 +19,7 @@ export default function CreateAmazingCTA() {
           </p>
 
           <Link
-            href="mailto:hi@meoneeb.com"
+            href="mailto:hi@sameeen.com"
             className="email-link"
             target="_blank"
           >
@@ -31,7 +31,7 @@ export default function CreateAmazingCTA() {
                 width: "fit-content",
               }}
             >
-              hi@meoneeb.com
+              hi@sameeen.com
             </h2>
           </Link>
         </div>

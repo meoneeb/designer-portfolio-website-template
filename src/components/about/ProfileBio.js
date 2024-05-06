@@ -1,12 +1,23 @@
+"use client"
 import { bio } from "@/database/bio";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import {
+  fadeDown,
+  fadeDownIn,
+  fadeDownOn,
+} from "@/commonComponents/motion/animate";
 
 export default function ProfileBio() {
   const Name = bio.Name;
   const avatar = bio.Avatar;
 
   return (
-    <>
+    <motion.div
+      initial={fadeDownIn}
+      whileInView={fadeDownOn}
+      transition={fadeDown}
+    >
       <div
         className="containerDiv flex-row align-items-center"
         style={{ gap: 20, width: "100%" }}
@@ -40,6 +51,6 @@ export default function ProfileBio() {
           </p>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }

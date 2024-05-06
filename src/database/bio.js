@@ -1,7 +1,7 @@
 export const bio = {
-  Name: "Oneeb Faisal",
-  Role: "Full Stack Designer",
-  FrontPage_Title: "Graphic & UI Designer",
+  Name: "Sameen Hassan",
+  Role: "Graphic Designer",
+  FrontPage_Title: "Graphic Designer",
   Avatar: "/images/bio/profile.webp",
   BioShort:
     "Passionate about creating visually stunning designs that not only captivate the audience but also enhance user experiences. With a keen eye for detail and a deep understanding of design principles, I specialize in graphic design and user interface (UI) design, turning ideas into engaging visual stories.",
@@ -36,7 +36,7 @@ export const sociallinks = [
 export const details = [
   {
     Label: "Email",
-    Value: "hi@meoneeb.com",
+    Value: "hi@sameeen.com",
   },
   {
     Label: "Phone",

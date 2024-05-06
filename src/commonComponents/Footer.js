@@ -8,12 +8,12 @@ export default function Footer() {
   const { IsMob } = useDevice();
   return (
     <div
-      className="fluid-container pt-4"
+      className="fluid-container"
       style={{
         textAlign: "center",
       }}
     >
-      <div
+      {/* <div
         className="container d-flex pt-5"
         style={{
           flexDirection: IsMob ? "column" : "row",
@@ -86,7 +86,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

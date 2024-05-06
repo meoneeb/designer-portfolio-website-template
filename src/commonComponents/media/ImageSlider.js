@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { useDevice } from "../../../../helpers/useDevice";
+import { useDevice } from "../../../helpers/useDevice";
 import { Modal } from "react-bootstrap";
 export default function ImageSlider({ portfolioItem }) {
   const { IsMob } = useDevice();
@@ -82,7 +82,7 @@ export default function ImageSlider({ portfolioItem }) {
                 style={{
                   objectFit: IsMob ? "cover" : "contain",
                   height: IsMob ? 200 : 480,
-                  background: "var(--light)",
+                  background: "var(--text)",
                   cursor: "pointer",
                   color: textColorDark,
                 }}

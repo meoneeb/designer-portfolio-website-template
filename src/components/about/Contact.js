@@ -2,11 +2,22 @@
 import { useDevice } from "../../../helpers/useDevice";
 import Link from "next/link";
 import { sociallinks, details } from "@/database/bio";
+import { motion } from "framer-motion";
+import {
+  fadeDown,
+  fadeDownIn,
+  fadeDownOn,
+} from "@/commonComponents/motion/animate";
+
 export default function Contact() {
   const { IsWeb, IsMob } = useDevice();
 
   return (
-    <>
+    <motion.div
+      initial={fadeDownIn}
+      whileInView={fadeDownOn}
+      transition={fadeDown}
+    >
       <div
         className="d-flex justify-content-start align-items-start p-4 containerDiv"
         style={{
@@ -16,7 +27,7 @@ export default function Contact() {
         {details.map((value, index) => (
           <div
             className="d-flex flex-row justify-content-start align-items-start"
-            style={{ width: "100%", borderBottom: "1px solid #222" }}
+            style={{ width: "100%", borderBottom: "1px solid var(--outline)" }}
           >
             <div style={{ width: "40%" }}>
               <p style={{ color: "var(--grey)" }}>{value.Label}</p>
@@ -45,6 +56,6 @@ export default function Contact() {
           ))}
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }

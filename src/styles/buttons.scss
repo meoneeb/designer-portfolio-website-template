@@ -15,7 +15,7 @@
 }
 
 .btn-primary {
-  color: #1e1e1e;
+  color: #ffffff;
   font-weight: 600;
   border: none;
   border-radius: 4px;
@@ -30,7 +30,7 @@
 }
 
 .btn-text {
-  color: var(--light);
+  color: var(--text);
   font-weight: 600;
   border: none;
   border-radius: 4px;
@@ -62,30 +62,31 @@
     }
   }
 }
-// SIDE NAVBAR
-.iconMenuContainer {
-  width: 48px;
-  height: 48px;
+// NAVBAR START
+
+.navItem {
+  color: var(--text);
+  padding: 10px;
+  white-space: nowrap;
   &:hover {
-    background-color: var(--primary10);
-    border-radius: 100px;
-    .iconMenu {
-      color: var(--primary);
-    }
+    background-color: var(--dark);
   }
 }
-.iconMenuActive {
-  width: 48px;
-  height: 48px;
-  background-color: var(--primary10);
-  border-radius: 100px;
-  .iconMenu {
-    color: var(--primary);
+.navActive {
+  color: var(--text);
+  padding: 10px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  text-decoration-color: var(--primary);
+  white-space: nowrap;
+  &:hover {
+    background-color: var(--dark);
   }
 }
-.iconMenu {
-  color: var(--white);
-}
+
+// NAVBAR END
+
 .brandsIcon {
   width: 48px;
   height: 48px;
@@ -131,6 +132,10 @@
   }
 }
 
+.paginationActive {
+  background-color: var(--primary); color: #fff;
+}
+
 .btn-text2 {
   display: flex;
   width: fit-content;
@@ -152,5 +157,83 @@
     .hover {
       display: block;
     }
+  }
+}
+
+.btnPR {
+  color: #fff;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0px 20px;
+  height: 40px;
+  // width: fit-content;
+  border-radius: 15px;
+  &:hover {
+    @include btn-hover-shadow;
+    @include btn-hover-up;
+  }
+}
+.btnSEC {
+  color: var(--text);
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0px 20px;
+  height: 40px;
+  border-radius: 15px;
+  &:hover {
+    background-color: var(--primary);
+    color: #fff;
+    @include btn-hover-shadow;
+    @include btn-hover-up;
+  }
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(249,249,249,0.98);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 24px;
+  }
+
+  .menuItems.open {
+    display: flex;
+    // height: 100%;
   }
 }

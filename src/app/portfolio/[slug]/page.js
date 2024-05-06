@@ -5,7 +5,6 @@ import "@/styles/portfolio.scss";
 import { usePathname } from "next/navigation";
 import Header from "@/components/portfolio/SinglePortfolio/Header";
 import PortfolioSingleContent from "@/components/portfolio/SinglePortfolio/PortfolioSingleContent";
-import PrototypeBtn from "@/components/portfolio/SinglePortfolio/PrototypeBtn";
 import CreateAmazingCTA from "@/components/home/CreateAmazingCTA";
 import PortfolioNavigate from "@/components/portfolio/SinglePortfolio/PortfolioNavigate";
 import ProjectDetails from "@/components/portfolio/SinglePortfolio/ProjectDetails";
@@ -78,7 +77,7 @@ export default function PortfolioSingle({ params }) {
       <div
         className="pt-4"
         style={{
-          background: "var(--light)",
+          background: "var(--text)",
           borderRadius: "20px 20px 0px 0px",
         }}
       >
@@ -91,9 +90,6 @@ export default function PortfolioSingle({ params }) {
               ) : null}
               <PortfolioSingleContent portfolioItem={portfolioItem} />
               <hr />
-              {portfolioItem.Prototype ? (
-                <PrototypeBtn portfolioItem={portfolioItem} />
-              ) : null}
               <PortfolioNavigate portfolioItem={portfolioItem} />
             </div>
             <div className="col-2">{""}</div>

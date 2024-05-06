@@ -5,20 +5,18 @@ export default function Header({portfolioItem}) {
     return (
         <>
         <div
-        className="container-fluid d-flex flex-column justify-content-end pb-4"
+        className="container-fluid d-flex flex-column justify-content-start align-items-center pt-5"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0, 0.9)), url(${portfolioItem.Thumb})`,
-          backgroundSize: "cover",
-          height: 200,
-          backgroundPosition: "center center",
+          minHeight: 200,
         }}
       >
         <div
-          className="container d-flex flex-row justify-content-start align-items-center"
-          style={{ gap: 20 }}
+          className=" d-flex flex-column justify-content-start align-items-center pb-4"
+          style={{ gap: 0 }}
         >
           <GoBackButton />
-          <h2>{portfolioItem.Title}</h2>
+          <h2 style={{margin: 0}}>{portfolioItem.Title}</h2>
+          <p style={{margin:0, color: "var(--primary)"}}>{portfolioItem.Date}</p>
         </div>
       </div>
         </>

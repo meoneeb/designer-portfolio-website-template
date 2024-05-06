@@ -1,22 +1,33 @@
 export const menu = [
     {
       Label: "Home",
-      Icon: "fi fi-br-home",
       Link: "/",
     },
     {
       Label: "About me",
-      Icon: "fi fi-br-user",
       Link: "/bio",
     },
     {
       Label: "Portfolio",
-      Icon: "fi fi-br-briefcase",
       Link: "/portfolio",
     },
+    // {
+    //   Label: "Contact",
+    //   Icon: "fi fi-br-paper-plane",
+    //   Link: "/contact",
+    // },
+  
+  ];
+  export const menuButtons = [
     {
-      Label: "Contact",
-      Icon: "fi fi-br-paper-plane",
+      Label: "Hire me",
       Link: "/contact",
+      CTA: true
     },
+    {
+      Label: "Download CV",
+      Link: "/bio",
+      CTA: false
+    },
+  
   ];

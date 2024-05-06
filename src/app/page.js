@@ -1,8 +1,7 @@
 import HomePage from "@/components/home/HomePage";
-
 export default function Home() {
   const metadata = {
-    title: "Oneeb Faisal - Designer",
+    title: "Sameen Hassan - Portfolio",
     description:
       "I am Oneeb Faisal, Graphic & UI Designer packing more than 4 years of experience.",
       thumb: "/meoneeb.png"
@@ -37,6 +36,7 @@ export default function Home() {
           content="summary_large_image"
         />
       </head>
+      {/* <FeaturedPortfolio /> */}
       <HomePage />
     </>
   );

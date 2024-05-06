@@ -12,22 +12,21 @@
 /* UI ICONS */
 @import "~@flaticon/flaticon-uicons/css/bold/rounded";
 @import "~@flaticon/flaticon-uicons/css/brands/all";
-
 :root {
-  --primary: rgba(143, 255, 0, 1); // #8FFF00 - PRIMARY COLOR USED ON COMPLETE WEBSITE WITH DIFFERENT SHADES
-  --primary0: rgba(143, 255, 0, 0);
-  --primary5: rgba(143, 255, 0, 0.05);
-  --primary10: rgba(143, 255, 0, 0.1);
-  --primary20: rgba(143, 255, 0, 0.2);
-  --primary40: rgba(143, 255, 0, 0.4);
-  --primary60: rgba(143, 255, 0, 0.6);
-  --primary80: rgba(143, 255, 0, 0.8);
-  --light: rgba(255,255,255,1); // #FFFFFF / WHITE
-  --outline: #333333;
+  --primary: rgb(118, 200, 147); // PRIMARY COLOR USED ON COMPLETE WEBSITE WITH DIFFERENT SHADES
+  --primary0: rgba(118, 200, 147, 0);
+  --primary5: rgba(118, 200, 147, 0.05);
+  --primary10: rgba(118, 200, 147, 0.1);
+  --primary20: rgba(118, 200, 147, 0.2);
+  --primary40: rgba(118, 200, 147, 0.4);
+  --primary60: rgba(118, 200, 147, 0.6);
+  --primary80: rgba(118, 200, 147, 0.8);
+  --light: #0e0e0e; // #FFFFFF / WHITE
+  --outline: #f0f0f0;
   --grey: #777777;
-  --dark: #1a1a1a;
-  --bg-main: #0e0e0e; // MAIN BACKGROUND
-  --bg-lighter: #f0f0f0; // LIGHTER GREY BACKGROUND  
+  --dark: #fcfcfc;
+  --bg-main: #ffffff; // MAIN BACKGROUND
+  --bg-lighter: #f9f9f9; // LIGHTER GREY BACKGROUND  
   --back3: rgba(255,255,255,1); // PORTFOLIO PAGE
   --text3: #1a1a1a; // PORTFOLIO PAGE TEXT
   --max-width: 1100px;
@@ -39,7 +38,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: var(--light);
+  color: var(--text);
 }
 
 html,

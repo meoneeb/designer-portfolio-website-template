@@ -1,20 +1,34 @@
 "use client";
+import React from "react";
 import { portfolioArr } from "@/database/portfolio";
 import Link from "next/link";
 import "@/styles/portfolio.scss";
 import parse from "html-react-parser";
 import { useDevice } from "../../../helpers/useDevice";
+import { motion } from "framer-motion";
+import {
+  fadeDown,
+  fadeDownIn,
+  fadeDownOn,
+} from "@/commonComponents/motion/animate";
 
 export default function PortfolioCard() {
-  // Function to convert spaces to hyphens
+  const { IsMob } = useDevice();
+
   const newSlug = (text) => {
     return text.toLowerCase().replace(/\s+/g, "-");
   };
-  const { IsMob } = useDevice();
+
   return (
     <div className="d-flex flex-nowrap flex-column">
       {portfolioArr.map((value, index) => (
-        <div className="mb-4" key={index}>
+        <motion.div
+          className="mb-4"
+          key={index}
+          initial={fadeDownIn}
+          whileInView={fadeDownOn}
+          transition={fadeDown}
+        >
           <Link href={`/portfolio/${newSlug(value.Slug)}`}>
             <div
               className="portfolioCard d-flex align-items-center justify-content-start"
@@ -46,7 +60,7 @@ export default function PortfolioCard() {
             </div>
           </Link>
           <hr className="mt-5" style={{ border: "1px solid var(--outline)" }} />
-        </div>
+        </motion.div>
       ))}
     </div>
   );

@@ -2,11 +2,21 @@
 import { academicsArr } from "@/database/bio";
 import { useDevice } from "../../../helpers/useDevice";
 import SectionBtn from "@/commonComponents/SectionBtn";
+import { motion } from "framer-motion";
+import {
+  fadeDown,
+  fadeDownIn,
+  fadeDownOn,
+} from "@/commonComponents/motion/animate";
 
 export default function Academics() {
   const { IsMob } = useDevice();
   return (
-    <>
+    <motion.div
+      initial={fadeDownIn}
+      whileInView={fadeDownOn}
+      transition={fadeDown}
+    >
       <div
         className="d-flex"
         style={{
@@ -20,7 +30,7 @@ export default function Academics() {
           style={{ width: IsMob ? "100%" : "50%" }}
         >
           <div className="containerDiv">
-            <h3 style={{ color: "var(--primary)", marginBottom: 20 }}>
+            <h3 style={{ color: "var(--text)", marginBottom: 20 }}>
               Academics
             </h3>
             <div>
@@ -50,7 +60,7 @@ export default function Academics() {
           className="containerDiv"
           style={{ flexGrow: 1, width: IsMob ? "100%" : "50%" }}
         >
-          <h3 style={{ color: "var(--primary)", marginBottom: 20 }}>Courses</h3>
+          <h3 style={{ color: "var(--text)", marginBottom: 20 }}>Courses</h3>
           <div>
             {academicsArr.map((value, index) => {
               if (value.Course === true)
@@ -71,6 +81,6 @@ export default function Academics() {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
